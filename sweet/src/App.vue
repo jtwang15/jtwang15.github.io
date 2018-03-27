@@ -1,15 +1,34 @@
 <template>
-    <div id="app">
-        <router-view/>
+  <div id="app" :style="{background: 'url('+ img +')',backgroundSize:'cover',backgroundRepeat:'no-repeat'}">
+    <router-view/>
+    <div class="btn-group-sm">
+      <button type="button" class="btn btn-light" @click="getImg">
+        <i class="el-icon-arrow-left"></i>
+      </button>
+      <button type="button" class="btn btn-light">
+        <i class="el-icon-arrow-right"></i>
+      </button>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "App",
-  data(){
-      return{
-      }
+  data() {
+    return {
+      img: "http://api.dujin.org/bing/1366.php",
+      day:0
+    };
+  },
+  methods: {
+    getImg() {
+      this.day++;
+      this.$http.get("/apis/HPImageArchive.aspx?format=js&idx="+this.day+"&n=1").then(res=>{
+        let imgurl="https:www.bing.com"+res.data.images[0].url;
+        this.img=imgurl
+      })
+    }
   }
 };
 </script>
@@ -184,17 +203,12 @@ input,
 select {
   vertical-align: middle;
 }
-html,body{
-    width: 100vw;
-    min-height:100vh;
-    height: 100%;
-    overflow-x: hidden;
-}
-#app {
-  width:100vw;
-  height:100vh; 
-  background: url("http://api.dujin.org/bing/1366.php") no-repeat;
-  background-size: cover
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
 }
 /* #app:after{
     content: '';
@@ -212,3 +226,21 @@ html,body{
     z-index: -1;
 } */
 </style>
+<style lang="scss" scoped>
+#app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .btn-group-sm {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+  .btn-light.focus,
+  .btn-light:focus {
+    box-shadow: none;
+    border-color: lightseagreen;
+  }
+}
+</style>
+
