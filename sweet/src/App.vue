@@ -1,33 +1,51 @@
 <template>
-  <div id="app" :style="{background: 'url('+ img +')',backgroundSize:'cover',backgroundRepeat:'no-repeat'}">
-    <router-view/>
+  <div id="app" ref="apps" :style="{background: 'url('+ img +')',backgroundSize:'cover',backgroundRepeat:'no-repeat'}">
+    <div class="main">
+      <ul class="main-nav">
+        <li class="text-center">
+          <router-link to="/">
+            <img src="./assets/img/lily.png" alt="">
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/web">
+              <i class="fa fa-firefox"></i>
+              <span>前端有关</span>
+          </router-link>
+        </li>
+      </ul>
+    </div>
+    <router-view class="router"></router-view>
     <div class="btn-group-sm">
-      <button type="button" class="btn btn-light" @click="getImg">
+      <button type="button" class="btn btn-light" @click="getImg('add')">
         <i class="el-icon-arrow-left"></i>
-      </button>
-      <button type="button" class="btn btn-light">
-        <i class="el-icon-arrow-right"></i>
       </button>
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "App",
   data() {
     return {
       img: "http://api.dujin.org/bing/1366.php",
-      day:0
+      day: 0
     };
   },
   methods: {
-    getImg() {
+    getImg(val) {
+      let that = this;
       this.day++;
-      this.$http.get("/apis/HPImageArchive.aspx?format=js&idx="+this.day+"&n=1").then(res=>{
-        let imgurl="https:www.bing.com"+res.data.images[0].url;
-        this.img=imgurl
-      })
+      this.$http
+        .get("/apis/HPImageArchive.aspx?format=js&idx=" + this.day + "&n=1")
+        .then(res => {
+          let imgurl = "https:www.bing.com" + res.data.images[0].url;
+          let newImage = new Image(0, 0);
+          newImage.src = imgurl;
+          newImage.onload = function() {
+            that.img = imgurl;
+          };
+        });
     }
   }
 };
@@ -136,7 +154,8 @@ summary {
   display: block;
 }
 
-nav ul {
+nav ul,
+ul {
   list-style: none;
 }
 
@@ -160,6 +179,10 @@ a {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
 }
 
 ins {
@@ -210,21 +233,6 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
-/* #app:after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url("http://api.dujin.org/bing/1366.php") no-repeat;
-    background-size: cover;
-    opacity: 0.75;
-    z-index: -1;
-} */
 </style>
 <style lang="scss" scoped>
 #app {
@@ -240,6 +248,33 @@ body {
   .btn-light:focus {
     box-shadow: none;
     border-color: lightseagreen;
+  }
+  .main {
+    .main-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      background: rgba(128, 222, 234, 0.6);
+      > li:not(:first-child) {
+        border-top: 1px solid rgb(38, 198, 218);
+        padding: 0 20px;
+        &:hover{
+          background: rgb(63, 215, 235);
+        }
+      }
+      > li {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+  }
+  .router {
+    width: calc(100vw - 200px);
+    min-height: 100vh;
+    margin-left: 200px;
+    background: rgba(255,255,255,.24)
   }
 }
 </style>

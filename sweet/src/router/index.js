@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Nav from '@/components/nav/Nav'
+import Home from "@/components/Home"
+import Web from "@/components/webs/Web"
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  routes: [{
-    path: '/',
-    name: 'navbar',
-    component: Nav
-  }]
+  routes: [
+    {
+      path:'/',
+      name:'home',
+      component:Home
+    },
+    {
+      path:'/web',
+      name:'web',
+      component:Web
+    }
+  ]
 })
