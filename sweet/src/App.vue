@@ -15,7 +15,7 @@
         </li>
       </ul>
     </div>
-    <router-view class="router"></router-view>
+    <router-view class="router p-2"></router-view>
     <div class="btn-group-sm">
       <button type="button" class="btn btn-light" @click="getImg('add')">
         <i class="el-icon-arrow-left"></i>
@@ -232,6 +232,15 @@ body {
   min-height: 100vh;
   height: 100%;
   overflow-x: hidden;
+}
+.f12{
+  font-size: 12px;
+}
+.f14{
+  font-size: 14px
+}
+.f16{
+  font-size: 16px;
 }
 </style>
 <style lang="scss" scoped>
