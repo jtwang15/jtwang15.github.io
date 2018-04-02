@@ -7,38 +7,38 @@
                     web开发文档:</p>
                 <ul>
                     <li class="m-3">
-                        <a href="https://developer.mozilla.org/zh-CN/">
+                        <a href="https://developer.mozilla.org/zh-CN/" target="_blank">
                             <!-- <img src="" alt="" style="width:20px;"> -->
                             <span class="mdn tags"></span>
                             <span>MDN</span>
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="http://es6.ruanyifeng.com/">
+                        <a href="http://es6.ruanyifeng.com/" target="_blank">
                             <span class="es6 tags">ES</span>
                             ECMAScript 6 入门
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="http://es6.ruanyifeng.com/">
+                        <a href="http://es6.ruanyifeng.com/" target="_blank">
                             <span class="bt4 tags">B</span>
                             BootStrap 4
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="https://www.lodashjs.com/">
+                        <a href="https://www.lodashjs.com/" target="_blank">
                             <span class=" lo tags"></span>
                             Lodash
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="https://www.tslang.cn/docs/home.html">
+                        <a href="https://www.tslang.cn/docs/home.html" target="_blank">
                             <span class=" ts tags">TS</span>
                             TypeScript
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000">
+                        <a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000" target="_blank">
                             <span class="liao tags">
                             </span>
                             廖雪峰JS教程
@@ -54,37 +54,37 @@
                     相关网站:</p>
                 <ul>
                     <li class="m-3">
-                        <a href="https://scriptoj.com/">
+                        <a href="https://scriptoj.com/" target="_blank">
                             <span class="scriptOj tags"></span>
                             scriptOj(JS精华题库)
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="https://www.fundebug.com/">
+                        <a href="https://www.fundebug.com/" target="_blank">
                             <span class="fundebug tags"></span>
                             FunDebug
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="https://juejin.im/post/5a0c1956f265da430a501f51">
+                        <a href="https://juejin.im/post/5a0c1956f265da430a501f51" target="_blank">
                             <span class="juejin tags"></span>
                             个人学习资源分享
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="https://juejin.im/post/5965943ff265da6c30653879">
+                        <a href="https://juejin.im/post/5965943ff265da6c30653879" target="_blank">
                             <span class="juejin tags"></span>
                             正则
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="http://menvscode.com/">
+                        <a href="http://menvscode.com/" target="_blank">
                             <span class="menvscode">MVC</span>
                             MVC前端网
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="http://caibaojian.com/">
+                        <a href="http://caibaojian.com/" target="_blank">
                             <span class="caibaojian tags"></span>
                             前端开发者博客
                         </a>
@@ -100,13 +100,13 @@
                 </p>
                 <ul>
                     <li class="m-3">
-                        <a href="https://ke.qq.com/teacher/27732357">
+                        <a href="https://ke.qq.com/teacher/27732357" target="_blank">
                             <span class="teacher tags"></span>
                             米斯特吴(Vue,Ng,Node)
                         </a>
                     </li>
                     <li class="m-3">
-                        <a href="https://www.itying.com/">
+                        <a href="https://www.itying.com/" target="_blank">
                             <span class="itying tags"></span>
                             IT 营
                         </a>

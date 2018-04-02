@@ -8,7 +8,7 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/web">
+          <router-link to="/">
               <i class="fa fa-firefox"></i>
               <span>前端有关</span>
           </router-link>
