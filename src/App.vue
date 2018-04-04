@@ -9,8 +9,18 @@
         </li>
         <li>
           <router-link to="/">
+            <div>
               <i class="fa fa-firefox"></i>
               <span>前端有关</span>
+            </div>
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/jianing">
+            <div>
+              <i class="fa fa-heart text-danger" aria-hidden="true"></i>
+              <span class="text-danger">挚</span>
+            </div>
           </router-link>
         </li>
       </ul>
@@ -233,13 +243,13 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
-.f12{
+.f12 {
   font-size: 12px;
 }
-.f14{
-  font-size: 14px
+.f14 {
+  font-size: 14px;
 }
-.f16{
+.f16 {
   font-size: 16px;
 }
 </style>
@@ -269,7 +279,7 @@ body {
       > li:not(:first-child) {
         border-top: 1px solid rgb(38, 198, 218);
         padding: 0 20px;
-        &:hover{
+        &:hover {
           background: rgb(63, 215, 235);
         }
       }
@@ -283,7 +293,7 @@ body {
     width: calc(100vw - 200px);
     min-height: 100vh;
     margin-left: 200px;
-    background: rgba(255,255,255,.24)
+    background: rgba(255, 255, 255, 0.24);
   }
 }
 </style>

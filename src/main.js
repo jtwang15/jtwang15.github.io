@@ -6,8 +6,10 @@ import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
 import 'bootstrap/dist/css/bootstrap.min.css' //bootstrap
 import 'font-awesome/css/font-awesome.css';//导入第三方图标库
+import VueLazyload from 'vue-lazyload'  //懒加载插件
 
 Vue.use(ElementUi)
+Vue.use(VueLazyload)
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
