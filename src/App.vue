@@ -15,14 +15,14 @@
             </div>
           </router-link>
         </li>
-        <li>
+        <!-- <li>
           <router-link to="/jianing">
             <div>
               <i class="fa fa-heart text-danger" aria-hidden="true"></i>
               <span class="text-danger">挚</span>
             </div>
           </router-link>
-        </li>
+        </li> -->
       </ul>
     </div>
     <router-view class="router p-2"></router-view>
