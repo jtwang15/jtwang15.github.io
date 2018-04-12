@@ -3,6 +3,9 @@ import Router from 'vue-router'
 
 import Home from "@/components/Home"
 import JiaNing from '@/components/JiaNing'
+
+
+import QingMing from '@/components/photo/QingMing'
 Vue.use(Router)
 
 export default new Router({
@@ -18,5 +21,11 @@ export default new Router({
       name: 'jianing',
       component: JiaNing
     },
+    {
+      path: '/photo/qingming',
+      name: 'qingming',
+      component: QingMing
+    },
+
   ]
 })

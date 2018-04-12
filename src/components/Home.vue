@@ -168,7 +168,7 @@
                 <div class="row">
                     <div class="pl-3 mt-3 text-dark col-md-7">
                         <p class="text-spac">
-                           &nbsp;&nbsp;&nbsp;带团队的这几年，越来越笃定 Leader 最重要的三件事情是：内心有相信并让人相信、让事情发生（make things happen）、保持谦卑与善良。这个世界好大，能找到一小群人一起做一件彼此相信的事，是多么幸运与幸福。 ​​​--玉伯​ 
+                            &nbsp;&nbsp;&nbsp;带团队的这几年，越来越笃定 Leader 最重要的三件事情是：内心有相信并让人相信、让事情发生（make things happen）、保持谦卑与善良。这个世界好大，能找到一小群人一起做一件彼此相信的事，是多么幸运与幸福。 ​​​--玉伯​
                         </p>
                         <p class="text-spac text-dark pull-right">希望能找到这样的团队</p>
                     </div>

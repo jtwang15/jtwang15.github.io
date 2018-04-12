@@ -243,6 +243,20 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+::selection {
+  color: #fff;
+  background-color: #ea4c89;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #ea4c89;
+}
+
+::-webkit-selection {
+  color: #fff;
+  background-color: #ea4c89;
+}
 .f12 {
   font-size: 12px;
 }
