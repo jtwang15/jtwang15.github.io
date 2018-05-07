@@ -103,7 +103,7 @@
                         <li class="m-3">
                             <a href="https://ke.qq.com/teacher/27732357" target="_blank">
                                 <span class="teacher tags"></span>
-                                米斯特吴(Vue,Ng,Node)
+                                米斯特吴(Vue,Ng,Node,React2018)
                             </a>
                         </li>
                         <li class="m-3">
@@ -149,7 +149,7 @@
                     <div class="pl-3 mt-3 col-md-3 text-warning">
                         <p>工作经历</p>
                         <div class="pl-3 mt-3 text-dark">
-                            <p class="mt-2">2016.10 -- 至今</p>
+                            <p class="mt-2">2016.6 -- 至今</p>
                             <p class="mt-2">杭州</p>
                             <p class="mt-2">先后在两家科技公司担任web前端开发工程师</p>
                             <p class="mt-2">主要工作内容都是在PC端网站</p>
@@ -170,7 +170,7 @@
                         <p class="text-spac">
                             &nbsp;&nbsp;&nbsp;带团队的这几年，越来越笃定 Leader 最重要的三件事情是：内心有相信并让人相信、让事情发生（make things happen）、保持谦卑与善良。这个世界好大，能找到一小群人一起做一件彼此相信的事，是多么幸运与幸福。 ​​​--玉伯​
                         </p>
-                        <p class="text-spac text-dark pull-right">希望能找到这样的团队</p>
+                        <p class="text-spac text-dark pull-right">期待=>伙伴！</p>
                     </div>
                 </div>
 
